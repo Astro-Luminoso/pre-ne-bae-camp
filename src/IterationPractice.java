@@ -3,6 +3,7 @@ import java.util.stream.IntStream;
 public class IterationPractice {
     public static void main(String[] args) {
 
+        // part 1
         int index = 0;
         while (index < 100) {
             System.out.println(++index);
@@ -12,6 +13,7 @@ public class IterationPractice {
             System.out.println(i);
         }
 
+        // part 2
         int evenIndex = 0;
         do {
             evenIndex += 2;
@@ -21,6 +23,7 @@ public class IterationPractice {
             System.out.println(i);
         }
 
+        // part 3
         for(int i=2; i<=9; i++){
             for(int j=1; j<=9; j++) {
                 System.out.printf("%d ", i*j);
