@@ -31,7 +31,11 @@ public class Player {
 
     public String getName() { return name; }
 
-    public void setName(String name) { this.name = name; }
+    // setter method
+    public void setName(String name){
+
+        if(name != null && !name.isEmpty()) this.name = name;
+    }
 
     public int getAge() { return age; }
 
@@ -43,6 +47,7 @@ public class Player {
     public static void main(String[] args) {
         Player player1 = new Player("John", 25, "Male", 1534.53);
         Player player2 = new Player("Jane", 35, "Female", 45.77);
+        player1.setName("John Doe");
     }
 
 }

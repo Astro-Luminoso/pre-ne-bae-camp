@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class GradeCalculator {
     public static void main(String[] args) {
         int[] grades = {20, 65, 80, 92, 30};
@@ -6,6 +8,8 @@ public class GradeCalculator {
         for (int grade : grades) {
             averageGrade += grade;
         }
+
+//        double averageGrade2 = Arrays.stream(grades).sum();
         averageGrade /= grades.length;
 
         char grade = 'F';
