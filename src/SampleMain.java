@@ -1,19 +1,18 @@
 public class SampleMain {
 
     public static void main(String[] args) {
-        Car car1 = new SUV();
-        Car car2 = new Hatchback();
-        car1.move();
-        car1.stop();
-        car2.move();
-        car2.stop();
+
+        Animal animal = new Dog(4, "Female", "Poodle");
+        animal.makeSound();
+        animal.eat();
+        animal.genderInString();
+        Dog dog = (Dog) animal;
+        dog.speciesInString();
     }
 }
+// Output:
 
-/*
-Result:
-SUV is moving.
-SUV is stopped.
-Hatchback is moving.
-Hatchback is stopped.
- */
+//Bark! Bark!
+//This dog is a Poodle.
+//Eating Food with 0 arms!!
+//Gender is Female.
