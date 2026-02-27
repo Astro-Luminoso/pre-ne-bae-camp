@@ -30,9 +30,9 @@ public class RockScissorsPaper {
             String computerChoice = choices[random.nextInt(choices.length)];
             result.append(String.format("당신은 %s, 상대는 %s이므로, 당신은 ", userChoice, computerChoice));
 
-            if (userChoice.equals(computerChoice)) {
+            if (userChoice.equals(computerChoice))
                 result.append("비겼습니다.%n");
-            } else if ((userChoice.equals("가위") && computerChoice.equals("바위")) ||
+            else if ((userChoice.equals("가위") && computerChoice.equals("바위")) ||
                     (userChoice.equals("바위") && computerChoice.equals("보")) ||
                     (userChoice.equals("보") && computerChoice.equals("가위")))
                 result.append("졌습니다.%n");
